@@ -1,0 +1,155 @@
+body {
+    background-color: #902923;
+    font-family: 'Bree Serif', serif;;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    margin-right: 2rem;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: #B9BAA3;
+}
+
+.nav-bar a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    color: #A22C29;
+}
+
+.nav-bar a:hover{
+    background: #902923;
+    color: #D6D5C9;
+}
+
+.nav-left{
+    color: #0A100D;
+    float: left;
+    margin: auto;
+    font-size: 48px;
+    margin-left: 1rem;
+    display: none;
+    cursor: pointer;
+}
+
+.center{
+    margin: auto;
+    margin-top: 3rem;
+    width: 90%;
+    height: auto;
+}
+
+.logo{
+    width: 17rem;
+    margin: auto;
+    display: block;
+}
+
+.Presentation{
+    color: #D6D5C9;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.btn-serv button{
+    text-align: center;
+    cursor: pointer;
+    height: 3rem;
+    margin: auto;
+    display: block;
+    color: #B9BAA3;
+    background-color: #0A100D;
+    border-radius: 16px;
+    border: none;
+}
+
+.footer{
+    background-color: #B9BAA3;
+    color: #902923;
+    font-size: 12px;
+    height:auto;
+    width:100%;
+    margin-top: 12rem;
+}
+
+.descripion{
+    text-align: center;
+    color: #D6D5C9;
+}
+
+.row{
+    padding: 20px;
+    float: left;
+    margin-left: 5rem;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.row ul li a{
+    text-decoration: none;
+    color: #0A100D;
+}
+
+.row ul li a:hover{
+    color: #902923;
+    cursor: pointer;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+  }
+
+.txt-footer{
+    text-align: center;
+    font-size: 13px;
+    padding: 1rem;
+}
+
+@media(max-width: 561px){
+    .nav-left{
+        display: block;
+    }
+    .contents{
+        display: none;
+    }
+    .Presentation {
+        font-size: 1.6rem;
+    }
+    .btn-serv button {
+        margin-top: 5rem;
+    }
+    .footer {
+        margin-top: 7rem;
+    }
+}
+
+@media(max-width: 450px){
+    .Presentation {
+        font-size: 1.4rem;
+    }
+    .descripion{
+        line-height: 2;
+    }
+}
+
+@media(max-width: 376px){
+    .logo {
+        width: 16rem;
+    }
+    .Presentation {
+        font-size: 1.2rem;
+    }
+}
