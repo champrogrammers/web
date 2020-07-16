@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../src/styles/normalize.css';
 import '../src/styles/styles.css';
+import '../src/styles/normalize.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree Serif"></link>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <App/>

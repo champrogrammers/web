@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 class Footer extends Component {
     render() {
         return (
@@ -7,17 +9,17 @@ class Footer extends Component {
                 <div className="row">
                     <ul>
                         Mapa de sitio
-                <li> <a href="#">Inicio</a></li>
-                        <li> <a href="#">Servicios</a></li>
-                        <li> <a href="#">Porftafolio</a></li>
-                        <li> <a href="#">Contacto</a></li>
+                        <li><NavLink to="/Home">Inicio</NavLink></li>
+                        <li><NavLink to="/Services">Servicios</NavLink></li>
+                        <li><NavLink to="/Portfolio">Portafolio</NavLink></li>
+                        <li><NavLink to="/Contact">Contacto</NavLink></li>
                     </ul>
                 </div>
                 <div className="row">
                     <ul>
                         Redes Sociales
                 <li>
-                            <a href="https://www.instagram.com/cham_programmers/" target="_blank">
+                            <a href="https://www.instagram.com/cham_programmers/" target="_blank" rel="Instagram">
                                 <i className="fa fa-instagram" aria-hidden="true"></i> Instragram
                     </a>
                         </li>

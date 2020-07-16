@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 class Navbar extends Component {
 
     render() {
@@ -12,10 +14,10 @@ class Navbar extends Component {
                             <i className="fa fa-bars" aria-hidden="true"></i>
                         </div>
                         <div className="contents nav-bar">
-                            <li> <a href="#">Inicio</a> </li>
-                            <li> <a href="#">Servicios</a></li>
-                            <li> <a href="#">Portafolio</a> </li>
-                            <li> <a href="#">Contacto</a> </li>
+                            <li> <NavLink to="/Home">Inicio</NavLink> </li>
+                            <li> <NavLink to="/Services">Servicios</NavLink></li>
+                            <li> <NavLink to="/Portfolio">Portafolio</NavLink> </li>
+                            <li> <NavLink to="/Contact">Contacto</NavLink> </li>
                         </div>
                     </div>
                 </ul>

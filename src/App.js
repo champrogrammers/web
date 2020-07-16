@@ -1,21 +1,12 @@
 import React from 'react';
-import logo from './logo.ico';
-
-//IMPORTAR COMPONENTES
-import Navbar from '../src/components/navbar';
-import MainSection from '../src/components/mainSection';
-import Footer from '../src/components/footer';
+//IMPORTAR COMPONENTE DE RUTAS
+import Router from '../src/Router';
 
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
 
-      <section class="center">
-        <MainSection />
-      </section>
-
-      <Footer />
+        <Router></Router>
 
     </React.Fragment>
 
