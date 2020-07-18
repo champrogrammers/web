@@ -13,13 +13,13 @@ li{
     margin-right: 2rem;
 }
 
-.nav-bar{
+.default-menu .nav-bar{
     display: flex;
     flex-direction: row;
     background-color: #B9BAA3;
 }
 
-.nav-bar a {
+.default-menu .nav-bar a {
     float: left;
     text-align: center;
     text-decoration: none;
@@ -28,19 +28,13 @@ li{
     color: #A22C29;
 }
 
-.nav-bar a:hover{
+.default-menu .nav-bar a:hover{
     background: #902923;
     color: #D6D5C9;
 }
 
-.nav-left{
-    color: #0A100D;
-    float: left;
-    margin: auto;
-    font-size: 48px;
-    margin-left: 1rem;
-    display: none;
-    cursor: pointer;
+.mobile-menu{
+    visibility: hidden;
 }
 
 .center{
@@ -73,6 +67,40 @@ li{
     background-color: #0A100D;
     border-radius: 16px;
     border: none;
+}
+
+.contact{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 0rem;
+}
+
+.contact label{
+    color: #B9BAA3;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact input{
+    background-color: #D6D5C9;
+    padding: 0.3rem;
+    border: 0;
+}
+
+.contact select{
+    border: 0;
+    padding: 0.3rem;
+    background-color: #D6D5C9;
+}
+
+.contact textarea{
+    border: 0;
+    margin-bottom: 3rem;
+    background-color: #D6D5C9;
+    padding: 0.3rem;
 }
 
 .footer{
@@ -182,6 +210,44 @@ li{
     display: block;
 }
 
+.Error404 h2{
+    color: #D6D5C9;
+    font-size: 14rem;
+    text-align: center;
+    width: 62%;
+    margin: auto;
+}
+
+.Error404 h3{
+    color: #D6D5C9;
+    text-align: revert;
+    margin: auto;
+    margin-left: 14rem;
+    font-size: 2rem;
+}
+
+.Error404 h3 p{
+    display: flex;
+    line-height: 0.6rem;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.txtBlue{
+    color: rgb(3, 140, 194);
+}
+
+.txtwhite{
+    color: whitesmoke;
+}
+
+.txtRed{
+    color: rgb(226, 51, 21);
+}
+
+.txtGreen{
+    color: rgb(43, 209, 21);
+}
+
 @media (max-width: 1338px){
     .content-services p {
         font-size: 1rem;
@@ -203,6 +269,27 @@ li{
     }
 }
 
+@media(max-width: 1130px){
+    .Error404 h2 {
+        font-size: 12rem;
+    }
+    .Error404 h3 p{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 962px){
+    .Error404 h2 {
+        font-size: 10rem;
+    }
+    .Error404 h3 p{
+        font-size: 1.3rem;
+    }
+    .Error404 h3 {
+        margin-left: 9rem;
+    }
+}
+
 @media(max-width: 810px){
     .sqr-services {
         margin: 1rem;
@@ -214,15 +301,36 @@ li{
     .content-services span {
         font-size: 2rem;
     }
+    .Error404 h2 {
+        font-size: 8rem;
+    }
+    .Error404 h3 p{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 645px){
+    .Error404 h2 {
+        font-size: 6rem;
+    }
+    .Error404 h3 {
+        margin-left: 7rem;
+    }
+}
+
+@media(max-width: 527px){  
+    .Error404 h3 p {
+    font-size: 0.8rem;
+    }
+    .Error404 h2 {
+        font-size: 5.4rem;
+    }
+    .Error404 h3 {
+        margin-left: 5rem;
+    }
 }
 
 @media(max-width: 561px){
-    .nav-left{
-        display: block;
-    }
-    .contents{
-        display: none;
-    }
     .Presentation {
         font-size: 1.6rem;
     }
@@ -235,6 +343,16 @@ li{
     .sqr-services {
         height: 24rem;
     }
+    .Error404 h2 {
+        margin-top: 6rem;
+    }
+    .default-menu{
+        display: none;
+    }
+    .mobile-menu{
+        visibility: visible;
+        background: aqua;
+    }
 }
 
 @media(max-width: 450px){
@@ -243,6 +361,12 @@ li{
     }
     .descripion{
         line-height: 2;
+    }
+    .Error404 h3 {
+        margin-left: 3rem;
+    }
+    .Error404 h2 {
+        font-size: 4.2rem;
     }
 }
 
@@ -273,6 +397,12 @@ li{
     }
     .center {
         margin-top: 2rem;
+    }
+    .Error404 h3 p {
+        font-size: 0.7rem;
+    }
+    .Error404 h2 {
+        font-size: 3.2rem;
     }
 }
 
@@ -331,9 +461,23 @@ p {
 
   @keyframes latir {
       from{
-        width: 8rem;
+        width: 8.7rem;
       }
       to{
         width: 1;
+      }
+  }
+
+  .contact {
+      animation-duration: 2s;
+      animation-name: formulario;
+  }
+
+  @keyframes formulario {
+      from{
+          margin-top: 100%;
+      }
+      to{
+        margin-top: 1;
       }
   }

@@ -1,34 +1,45 @@
 import React, { Component } from 'react';
+import Form from '../components/form';
 
 class Contact extends Component {
-    render(){
 
-        const title = `Envianos un correo electrónico a example@gmail.com para cotizar el servicio que deseas.`;
-        let select = false;
-        //Muestra o quita el formulario
-        window.scroll(0,0);
-        function showForm(){
-            if (select){
-                select = false;
-            }
-            else{
-                select = true
-            }
-        }
+    state = {
+        visible: false
+    };
 
-        return(
-            <React.Fragment>
-                <div className="icon-plane">
-                    <i className="fa fa-paper-plane-o" aria-hidden="true"></i>
+    componentDidMount() {
+        window.scroll(0, 0);
+    }
+
+    render() {
+
+        const title = `Envianos un correo electrónico a "progracham@gmail.com" para cotizar el servicio que deseas.`;
+
+        return (
+            <div>
+                {this.state.visible ? (<Form />) : (
+                    <div>
+                    <div className="icon-plane">
+                        <i className="fa fa-paper-plane-o" aria-hidden="true"></i>
+                    </div>
+                    <div className="txt-contact">
+                        <p>{title}</p>
+                        <p>Con gusto te atenderemos</p>
+                        <p>ó</p>
+                        <p>Rellena el formulario</p>
+
+                        <button onClick={
+                            () => {
+                                this.setState({
+                                    visible: true
+                                });
+                                window.scroll(0,0);
+                            }
+                        }>Mostrar</button>
+                    </div>
                 </div>
-                <div className="txt-contact">
-                    <p>{title}</p>
-                    <p>Con gusto te atenderemos</p>
-                    <p>ó</p>
-                    <p>Rellena el formulario</p>
-                    <button onClick={showForm}>Mostrar</button>
-                </div>
-            </React.Fragment>
+                ) }
+            </div>
         )
     }
 }

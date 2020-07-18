@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-
 import { NavLink } from 'react-router-dom';
+import '../styles/hamburguer.css';
+
+//Menu hamburguesa
+import Hamburguer from '../components/hamburguer';
 
 class Navbar extends Component {
 
@@ -9,16 +12,19 @@ class Navbar extends Component {
         return (
             <nav>
                 <ul>
-                    <div className="nav-bar">
-                        <div className="nav-left">
-                            <i className="fa fa-bars" aria-hidden="true"></i>
-                        </div>
-                        <div className="contents nav-bar">
+                    <div className="default-menu">
+                        <div className="nav-bar">
                             <li> <NavLink to="/Home">Inicio</NavLink> </li>
                             <li> <NavLink to="/Services">Servicios</NavLink></li>
                             <li> <NavLink to="/Portfolio">Portafolio</NavLink> </li>
                             <li> <NavLink to="/Contact">Contacto</NavLink> </li>
                         </div>
+                    </div>
+                    <div className="mobile-menu">
+                    <div className="nav-bar">
+                        <Hamburguer/>
+                    </div>
+                        
                     </div>
                 </ul>
             </nav>

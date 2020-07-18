@@ -19,7 +19,7 @@ class Footer extends Component {
                     <ul>
                         Redes Sociales
                 <li>
-                            <a href="https://www.instagram.com/cham_programmers/" target="_blank" rel="Instagram">
+                            <a href="https://www.instagram.com/cham_programmers/" target="_blank" rel="noopener noreferrer">
                                 <i className="fa fa-instagram" aria-hidden="true"></i> Instragram
                     </a>
                         </li>

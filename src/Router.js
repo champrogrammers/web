@@ -8,6 +8,7 @@ import MainSection from '../src/components/mainSection';
 import Services from '../src/components/services';
 import Contact from '../src/components/contact';
 import Portfolio from './components/portfolio';
+import Error404 from './components/error404';
 
 class Router extends Component {
     render() {
@@ -22,6 +23,7 @@ class Router extends Component {
                         <Route exact path="/Services" component={Services}></Route>
                         <Route exact path="/Contact" component={Contact}></Route>
                         <Route exact path="/Portfolio" component={Portfolio}></Route>
+                        <Route path="*" component={Error404}></Route>
                     </Switch>
 
                 </section>
