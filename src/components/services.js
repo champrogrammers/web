@@ -21,12 +21,12 @@ class Services extends Component {
                         <img src={Jsico} alt="Javascript logo" />
                     </div>
                     <div className="sqr-services">
-                        <span>Aplicaciones Android</span>
+                        <span>Aplicaciónes Android</span>
                         <p>¿Buscas una aplicación móvil?, podemos crearte una aplicacion para dispositivos Android</p>
                         <img src={Android} alt="Android Estudio logo" />
                     </div>
                     <div className="sqr-services">
-                        <span>Aplicaciones de escritorio</span>
+                        <span>Aplicaciónes de escritorio</span>
                         <p>¿Lo que buscas es una aplicacion de escritorio?, podemos ayudarte a desarrollarla, ya sea con Java o C#</p>
                         <img src={Cs} alt="C sharp logo" />
                     </div>

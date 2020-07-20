@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import cham from '../res/cham.png';
 
 class MainSection extends Component {
+
+    viewServices = () => {
+        this.props.history.push('/Services');
+    }
+
     render() {
         window.scroll(0, 0);
         return (
@@ -15,7 +20,7 @@ class MainSection extends Component {
                     <p>Te ayudamos a <strong>actualizar tu marca o negocio</strong> haciéndolo más eficaz y tecnologico, adecuandonos a tu giro.</p>
                 </div>
                 <div className="txt-contact">
-                    <button>Ver Servicios</button>
+                    <button onClick={this.viewServices}>Ver Servicios</button>
                 </div>
             </React.Fragment>
         )

@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
 class Footer extends Component {
+
     render() {
+        let date = new Date();
+        let year = date.getFullYear();
         return (
             <footer className="footer">
                 <div className="row">
@@ -37,7 +40,7 @@ class Footer extends Component {
                 </div>
                 <div className="clearfix">
                     <div className="txt-footer">
-                        <p><span>&#169;</span>Copyrigth CHAM - 2020</p>
+                        <p><span>&#169;</span>{`Copyrigth CHAM - ${year}`}</p>
                     </div>
                 </div>
 

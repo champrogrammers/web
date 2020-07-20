@@ -1,11 +1,26 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import alertify from 'alertifyjs';
 import '../styles/hamburguer.css';
 
 //Menu hamburguesa
 import Hamburguer from '../components/hamburguer';
 
 class Navbar extends Component {
+
+    componentDidMount() {
+        let date = new Date();
+        let hour = date.getHours();
+        if (hour >= 20) {
+            alertify.notify('Buenas Noches');
+        }
+        if (hour >= 1 && hour <= 12) {
+            alertify.notify('Buenos Dias');
+        }
+        if (hour >= 13 && hour <= 19) {
+            alertify.notify('Buenas Tardes');
+        }
+    }
 
     render() {
 
@@ -21,10 +36,10 @@ class Navbar extends Component {
                         </div>
                     </div>
                     <div className="mobile-menu">
-                    <div className="nav-bar">
-                        <Hamburguer/>
-                    </div>
-                        
+                        <div className="nav-bar">
+                            <Hamburguer />
+                        </div>
+
                     </div>
                 </ul>
             </nav>

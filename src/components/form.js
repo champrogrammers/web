@@ -12,13 +12,9 @@ class Form extends Component {
         idea: ""
     }
 
-
-    mostrarAlerta() {
-        alertify.alert('Aviso', 'En CHAM tomamos en cuenta el respeto.', function () { alertify.notify('¡ Cuentanos que necesitas !'); });
-    }
-
     componentDidMount() {
-        this.mostrarAlerta();
+        alertify.set('notifier','position', 'bottom-right');
+        alertify.alert('Aviso', 'Tu formulario se enviara al equipo de CHAM', function () { alertify.notify('¡ Cuéntanos que necesitas !'); });
     }
 
     changeValues = ({ name, value }) => {
@@ -27,21 +23,28 @@ class Form extends Component {
         });
     }
 
+    redirectToHome = () => {
+        this.props.history.push('/Home');
+    }
+
     recibeForm = (e) => {
         e.preventDefault();
-        console.log(this.state);
+        let { name } = this.state;
+        let thanksMessage = `Gracias por contactarnos ${name}, se ha enviado tu petición al equipo de programadores de CHAM`;
+        let errorMsg = `${name}, si el problema persiste te recomendamos mandarnos correo a prograchamp@gmail.com`;
         axios
-            .post('https://champrogrammers.000webhostapp.com/sendEmail.php', JSON.stringify(this.state))
+            .post('https://champrogrammers.000webhostapp.com/makeTicke.php', JSON.stringify(this.state))
             .then(response => {
-                console.log(response)
+                alertify.set('notifier','position', 'top-center');
+                alertify.alert(`Se envio el formulario`, `Podemos tardar unas horas en contestar, en cuanto tengamos una estimación se la enviaremos a la dirección de correo: ${this.state.email}`,
+            function () { alertify.message(thanksMessage); });
+            this.redirectToHome();
             })
             .catch(error => {
-                console.log(error)
+                alertify.set('notifier','position', 'top-center');
+                alertify.alert('Error', 'No se ha mandado tu mensaje', function() {alertify.error(errorMsg)});
             })
-
-        let thanksMessage = `Gracias por contactarnos ${this.state.name}, se ha enviado tu petición al equipo de programadores de CHAM`;
-        alertify.alert(`Se envio el formulario`, `Podemos tardar unas horas en contestar, en cuanto tengamos una estimación se la enviaremos a la dirección de correo: ${this.state.email}`,
-            function () { alertify.message(thanksMessage); });
+        
     }
 
     render() {

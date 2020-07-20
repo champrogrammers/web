@@ -368,6 +368,9 @@ li{
     .Error404 h2 {
         font-size: 4.2rem;
     }
+    .sqr-services p {
+        margin-top: 0;
+    }
 }
 
 @media(max-width: 376px){

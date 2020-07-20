@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Form from '../components/form';
 
 class Contact extends Component {
 
-    state = {
-        visible: false
-    };
-
     componentDidMount() {
         window.scroll(0, 0);
+    }
+
+    showForm = () => {
+        this.props.history.push('/Form');
     }
 
     render() {
@@ -17,7 +16,6 @@ class Contact extends Component {
 
         return (
             <div>
-                {this.state.visible ? (<Form />) : (
                     <div>
                     <div className="icon-plane">
                         <i className="fa fa-paper-plane-o" aria-hidden="true"></i>
@@ -28,17 +26,9 @@ class Contact extends Component {
                         <p>ó</p>
                         <p>Rellena el formulario</p>
 
-                        <button onClick={
-                            () => {
-                                this.setState({
-                                    visible: true
-                                });
-                                window.scroll(0,0);
-                            }
-                        }>Mostrar</button>
+                        <button onClick={this.showForm}>Mostrar</button>
                     </div>
                 </div>
-                ) }
             </div>
         )
     }
