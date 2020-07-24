@@ -27,13 +27,8 @@ class Footer extends Component {
                     </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/Cham-Programmers-116797153450643/" target="_blank" rel="noopener noreferrer">
                                 <i className="fa fa-facebook" aria-hidden="true"></i> Facebook
-                    </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i className="fa fa-github" aria-hidden="true"></i> Github
                     </a>
                         </li>
                     </ul>

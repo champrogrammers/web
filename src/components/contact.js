@@ -12,7 +12,7 @@ class Contact extends Component {
 
     render() {
 
-        const title = `Envianos un correo electrónico a "progracham@gmail.com" para cotizar el servicio que deseas.`;
+        const title = `Envianos un correo electrónico a "Champrogrammers@gmail.com" para cotizar el servicio que deseas.`;
 
         return (
             <div>
