@@ -435,7 +435,7 @@ p {
 
   @keyframes fadein {
       from{
-          opacity: 0%;
+          opacity: 50%;
       }
       to{
           opacity: 100%;

@@ -19,6 +19,7 @@ class Router extends Component {
                 <section className="center">
 
                     <Switch>
+                        <Route exact path="/Cham-portfolio" component={MainSection}></Route>
                         <Route exact path="/" component={MainSection}></Route>
                         <Route exact path="/Home" component={MainSection}></Route>
                         <Route exact path="/Services" component={Services}></Route>
