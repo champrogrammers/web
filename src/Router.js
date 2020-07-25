@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 
 //IMPORTAR COMPONENTES
 import Navbar from '../src/components/navbar';
@@ -13,11 +13,12 @@ import Form from './components/form';
 
 //Hay un error de rutas en GH pages
 
-class Router extends Component {
+class RouterM extends Component {
     render() {
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <Navbar></Navbar>
+
                 <section className="center">
                     <Switch>
                         <Route exact path="/" component={MainSection}></Route>
@@ -33,9 +34,9 @@ class Router extends Component {
                 </section>
 
                 <Footer></Footer>
-            </BrowserRouter>
+            </HashRouter>
         )
     }
 }
 
-export default Router;
+export default RouterM;
