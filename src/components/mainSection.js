@@ -1,7 +1,22 @@
 import React, { Component } from 'react';
+import alertify from 'alertifyjs';
 import cham from '../res/cham.png';
 
 class MainSection extends Component {
+
+    componentDidMount() {
+        let date = new Date();
+        let hour = date.getHours();
+        if (hour >= 20) {
+            alertify.notify('Buenas Noches');
+        }
+        if (hour >= 1 && hour <= 12) {
+            alertify.notify('Buenos Dias');
+        }
+        if (hour >= 13 && hour <= 19) {
+            alertify.notify('Buenas Tardes');
+        }
+    }
 
     viewServices = () => {
         this.props.history.push('/Services');

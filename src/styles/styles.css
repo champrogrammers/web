@@ -429,13 +429,13 @@ p {
   }
 
   .logo{
-      animation-duration: 2s;
+      animation-duration: 1s;
       animation-name: fadein;
   }
 
   @keyframes fadein {
       from{
-          opacity: 50%;
+          opacity: 70%;
       }
       to{
           opacity: 100%;
