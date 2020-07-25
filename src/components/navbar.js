@@ -15,9 +15,9 @@ class Navbar extends Component {
                     <div className="default-menu">
                         <div className="nav-bar">
                             <li> <NavLink to="/Cham-portfolio/Home">Inicio</NavLink> </li>
-                            <li> <NavLink to="/Cham-portfolio/Home/Services">Servicios</NavLink></li>
-                            <li> <NavLink to="/Cham-portfolio/Home/Portfolio">Portafolio</NavLink> </li>
-                            <li> <NavLink to="/Cham-portfolio/Home/Contact">Contacto</NavLink> </li>
+                            <li> <NavLink to="/Cham-portfolio/Services">Servicios</NavLink></li>
+                            <li> <NavLink to="/Cham-portfolio/Portfolio">Portafolio</NavLink> </li>
+                            <li> <NavLink to="/Cham-portfolio/Contact">Contacto</NavLink> </li>
                         </div>
                     </div>
                     <div className="mobile-menu">

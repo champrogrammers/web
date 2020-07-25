@@ -12,10 +12,10 @@ class Footer extends Component {
                 <div className="row">
                     <ul>
                         Mapa de sitio
-                        <li><NavLink to="/Cham-portfolio/Home/Home">Inicio</NavLink></li>
-                        <li><NavLink to="/Cham-portfolio/Home/Services">Servicios</NavLink></li>
-                        <li><NavLink to="/Cham-portfolio/Home/Portfolio">Portafolio</NavLink></li>
-                        <li><NavLink to="/Cham-portfolio/Home/Contact">Contacto</NavLink></li>
+                        <li><NavLink to="/Cham-portfolio/Home">Inicio</NavLink></li>
+                        <li><NavLink to="/Cham-portfolio/Services">Servicios</NavLink></li>
+                        <li><NavLink to="/Cham-portfolio/Portfolio">Portafolio</NavLink></li>
+                        <li><NavLink to="/Cham-portfolio/Contact">Contacto</NavLink></li>
                     </ul>
                 </div>
                 <div className="row">

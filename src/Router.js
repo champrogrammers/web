@@ -22,10 +22,10 @@ class Router extends Component {
                         <Route exact path="/" component={MainSection}></Route>
                         <Route exact path="/Cham-portfolio/" component={MainSection}></Route>
                         <Route exact path="/Cham-portfolio/Home" component={MainSection}></Route>
-                        <Route exact path="/Cham-portfolio/Home/Services" component={Services}></Route>
-                        <Route exact path="/Cham-portfolio/Home/Contact" component={Contact}></Route>
-                        <Route exact path="/Cham-portfolio/Home/Portfolio" component={Portfolio}></Route>
-                        <Route exact path="/Cham-portfolio/Home/Form" component={Form}></Route>
+                        <Route exact path="/Cham-portfolio/Services" component={Services}></Route>
+                        <Route exact path="/Cham-portfolio/Contact" component={Contact}></Route>
+                        <Route exact path="/Cham-portfolio/Portfolio" component={Portfolio}></Route>
+                        <Route exact path="/Cham-portfolio/Form" component={Form}></Route>
                         <Route path="*" component={Error404}></Route>
                     </Switch>
 
