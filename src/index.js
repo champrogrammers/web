@@ -4,6 +4,7 @@ import '../src/styles/styles.css';
 import '../src/styles/normalize.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Router from './Router';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +13,9 @@ ReactDOM.render(
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <Router>
+      basename={'/Home'}
+    </Router>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
