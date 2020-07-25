@@ -14,10 +14,10 @@ class Navbar extends Component {
                 <ul>
                     <div className="default-menu">
                         <div className="nav-bar">
-                            <li> <NavLink to="/Cham-portfolio/Home">Inicio</NavLink> </li>
-                            <li> <NavLink to="/Cham-portfolio/Services">Servicios</NavLink></li>
-                            <li> <NavLink to="/Cham-portfolio/Portfolio">Portafolio</NavLink> </li>
-                            <li> <NavLink to="/Cham-portfolio/Contact">Contacto</NavLink> </li>
+                            <li> <NavLink to="/Home">Inicio</NavLink> </li>
+                            <li> <NavLink to="/Services">Servicios</NavLink></li>
+                            <li> <NavLink to="/Portfolio">Portafolio</NavLink> </li>
+                            <li> <NavLink to="/Contact">Contacto</NavLink> </li>
                         </div>
                     </div>
                     <div className="mobile-menu">

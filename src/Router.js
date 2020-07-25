@@ -21,11 +21,11 @@ class Router extends Component {
                     <Switch>
                         <Route exact path="/" component={MainSection}></Route>
                         <Route exact path="/Cham-portfolio/" component={MainSection}></Route>
-                        <Route exact path="/Cham-portfolio/Home" component={MainSection}></Route>
-                        <Route exact path="/Cham-portfolio/Services" component={Services}></Route>
-                        <Route exact path="/Cham-portfolio/Contact" component={Contact}></Route>
-                        <Route exact path="/Cham-portfolio/Portfolio" component={Portfolio}></Route>
-                        <Route exact path="/Cham-portfolio/Form" component={Form}></Route>
+                        <Route exact path="/Home" component={MainSection}></Route>
+                        <Route exact path="/Services" component={Services}></Route>
+                        <Route exact path="/Contact" component={Contact}></Route>
+                        <Route exact path="/Portfolio" component={Portfolio}></Route>
+                        <Route exact path="/Form" component={Form}></Route>
                         <Route path="*" component={Error404}></Route>
                     </Switch>
 

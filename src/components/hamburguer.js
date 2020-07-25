@@ -20,10 +20,10 @@ class Hamburguer extends Component {
                     </div>
                     <ul className="nav-2" id="nav-2">
                         <li>
-                            <NavLink to="/Cham-portfolio/Home">Inicio</NavLink>
-                            <NavLink to="/Cham-portfolio/Services">Servicios</NavLink>
-                            <NavLink to="/Cham-portfolio/Portfolio">Portafolio</NavLink>
-                            <NavLink to="/Cham-portfolio/Contact">Contacto</NavLink>
+                            <NavLink to="/Home">Inicio</NavLink>
+                            <NavLink to="/Services">Servicios</NavLink>
+                            <NavLink to="/Portfolio">Portafolio</NavLink>
+                            <NavLink to="/Contact">Contacto</NavLink>
                         </li>
                     </ul>
                 </div>
