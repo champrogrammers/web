@@ -11,13 +11,14 @@ import Portfolio from './components/portfolio';
 import Error404 from './components/error404';
 import Form from './components/form';
 
+//Hay un error de rutas en GH pages
+
 class Router extends Component {
     render() {
         return (
             <BrowserRouter>
                 <Navbar></Navbar>
                 <section className="center">
-
                     <Switch>
                         <Route exact path="/" component={MainSection}></Route>
                         <Route exact path="/web/" component={MainSection}></Route>
