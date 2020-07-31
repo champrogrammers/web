@@ -10,8 +10,8 @@ import Contact from '../src/components/contact';
 import Portfolio from './components/portfolio';
 import Error404 from './components/error404';
 import Form from './components/form';
+import Desktop from './components/desktop';
 
-//Hay un error de rutas en GH pages
 
 class RouterM extends Component {
     render() {
@@ -28,6 +28,8 @@ class RouterM extends Component {
                         <Route path="/Contact" component={Contact}></Route>
                         <Route path="/Portfolio" component={Portfolio}></Route>
                         <Route path="/Form" component={Form}></Route>
+                        <Route path="/desktopApps" component={Desktop}></Route>
+
                         <Route path="*" component={Error404}></Route>
                     </Switch>
 

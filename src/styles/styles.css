@@ -1,6 +1,6 @@
 body {
     background-color: #902923;
-    font-family: 'Bree Serif', serif;;
+    font-family: 'Bree Serif', serif;
 }
 
 .TODO{
@@ -35,6 +35,12 @@ li{
     display: flex;
     flex-direction: row;
     background-color: #B9BAA3;
+}
+
+h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #B9BAA3;
 }
 
 .default-menu .nav-bar a {
@@ -127,7 +133,7 @@ li{
     font-size: 12px;
     height:auto;
     width:100%;
-    margin-top: 12rem;
+    margin-top: 3rem;
 }
 
 .descripion{
@@ -266,6 +272,104 @@ li{
     color: rgb(43, 209, 21);
 }
 
+.itm-portafolio{
+    background-color: #B9BAA3;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.itm-portafolio p {
+    color: black;
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.itm-portafolio h3 {
+    font-size: 32px;
+    color: #902923;
+}
+
+.item-portfolio{
+    background-color: #B9BAA3;
+    padding: 1.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    width: 40%;
+    animation-duration: 1.5s;
+    animation-name: fadein;
+}
+
+.item-portfolio h4{
+    margin: 0;
+    font-size: 2.5rem;
+    color: #902923;
+    margin-bottom: 1rem;
+}
+
+.item-portfolio span{
+    margin: auto;
+    display: block;
+    font-size: 1.3rem;
+}
+
+.item-portfolio:hover{
+    background-color: rgb(26, 26, 26);
+    color: #D6D5C9;
+    cursor: default;
+    -webkit-box-shadow: 1px 1px 45px -7px rgba(214,213,201,0.61);
+    -moz-box-shadow: 1px 1px 45px -7px rgba(214,213,201,0.61);
+    box-shadow: 1px 1px 45px -7px rgba(214,213,201,0.61);
+}
+
+#container-works{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.icon-portfolio{
+    margin: auto;
+    width: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.icon-portfolio:hover{
+    animation-name: rotate360;
+    animation-duration: 1s;  
+}
+
+.indication{
+    visibility: visible;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #B9BAA3;
+}
+
+#txt-portfolio{
+    margin-top: 4rem;
+}
+
+@keyframes rotate360 { 
+    to { 
+        transform: rotate(360deg); 
+    } 
+} 
+
+#link-imagenes a {
+    text-decoration: none;
+    color: #902923;
+}
+
+#link-imagenes a:hover{
+    transition: ease 1s;
+    color: rgb(54, 2, 173);
+}
+
 @media (max-width: 1338px){
     .content-services p {
         font-size: 1rem;
@@ -306,6 +410,14 @@ li{
     .Error404 h3 {
         margin-left: 9rem;
     }
+    #container-works{
+        flex-direction: column;
+    }
+    .item-portfolio{
+        margin: auto;
+        width: 80%;
+        margin-bottom: 2rem;
+    }
 }
 
 @media(max-width: 810px){
@@ -325,6 +437,25 @@ li{
     .Error404 h3 p{
         font-size: 1rem;
     }
+    .txt-contact h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 700px){
+    .itm-portafolio h3 {
+        font-size: 27px;
+    }
+    .itm-portafolio p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    .itm-portafolio {
+        width: 80%;
+    }
 }
 
 @media(max-width: 645px){
@@ -333,6 +464,16 @@ li{
     }
     .Error404 h3 {
         margin-left: 7rem;
+    }
+}
+
+@media(max-width: 600px){
+    .txt-contact h2{
+        font-size: 1.5rem;
+        margin-top: 4rem;
+    }
+    .center h2{
+        margin-top: 5rem;
     }
 }
 
@@ -345,6 +486,12 @@ li{
     }
     .Error404 h3 {
         margin-left: 5rem;
+    }
+    .itm-portafolio{
+        padding: 1rem;
+    }
+    .itm-portafolio h3 {
+        font-size: 19px;
     }
 }
 
@@ -370,6 +517,18 @@ li{
     .mobile-menu{
         visibility: visible;
         background: aqua;
+    }
+    .txt-contact p{
+        font-size: 1.4rem;
+    }
+    #txt-portfolio {
+        margin-top: 0;
+    }
+    .txt-contact h2 {
+        margin-top: 5rem;
+    }
+    .center h2{
+        font-size: 1.5rem;
     }
 }
 
@@ -409,6 +568,12 @@ li{
     }
     .icon-plane {
         font-size: 9rem;
+    }
+    .txt-contact h2{
+        font-size: 1.2rem;
+    }
+    .item-portfolio span {
+        font-size: 1.3rem;
     }
 }
 
@@ -453,7 +618,7 @@ p {
 
   @keyframes fadein {
       from{
-          opacity: 70%;
+          opacity: 30%;
       }
       to{
           opacity: 100%;
