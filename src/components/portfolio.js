@@ -20,8 +20,11 @@ class Portfolio extends Component {
     }
 
     //Click en icono web
-    showWebComponent(){
-        alertify.notify('Aún no tenemos aplicaciónes web en portafolio');
+    showWebComponent = () => {
+        alertify.notify('Trabajos web');
+        setTimeout ( () => {
+            this.props.history.push('/webApps');
+        }, 900 )
     }
 
     render() {

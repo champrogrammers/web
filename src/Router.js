@@ -11,6 +11,7 @@ import Portfolio from './components/portfolio';
 import Error404 from './components/error404';
 import Form from './components/form';
 import Desktop from './components/desktop';
+import Webapps from './components/webapps';
 
 
 class RouterM extends Component {
@@ -29,6 +30,7 @@ class RouterM extends Component {
                         <Route path="/Portfolio" component={Portfolio}></Route>
                         <Route path="/Form" component={Form}></Route>
                         <Route path="/desktopApps" component={Desktop}></Route>
+                        <Route path="/webApps" component={Webapps}></Route>
 
                         <Route path="*" component={Error404}></Route>
                     </Switch>

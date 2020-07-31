@@ -298,8 +298,6 @@ h2{
     margin-right: 2rem;
     margin-left: 2rem;
     width: 40%;
-    animation-duration: 1.5s;
-    animation-name: formulario;
 }
 
 .item-portfolio h4{
@@ -307,6 +305,9 @@ h2{
     font-size: 2.5rem;
     color: #902923;
     margin-bottom: 1rem;
+    
+    animation-duration: 1.5s;
+    animation-name: formulario;
 }
 
 .item-portfolio span{
