@@ -38,7 +38,7 @@ class Portfolio extends Component {
 
                             <div className="item-portfolio">
                                 <h4>Web</h4>
-                                <span>Páginas y aplicaciónes web desarrolladas por nosotros.</span>
+                                <span>Catálogo de páginas web realizadas por nosotros, para mostrar a los clientes.</span>
                                 <div className="icon-portfolio" onClick={this.showWebComponent}>
                                    <img src={web} alt="icono paginas web"></img> 
                                 </div>
@@ -49,7 +49,7 @@ class Portfolio extends Component {
 
                             <div className="item-portfolio">
                                 <h4>Android</h4>
-                                <span>Aplicaciónes Android desarrolladas por nosotros.</span>
+                                <span>Catálogo de aplicaciónes Android realizadas por nosotros, para mostrar a los clientes.</span>
                                 <div className="icon-portfolio" onClick={this.showAndroidComponent}>
                                    <img src={zona} alt="icono android"></img> 
                                 </div>
@@ -60,7 +60,7 @@ class Portfolio extends Component {
 
                             <div className="item-portfolio">
                                 <h4>Escritorio</h4>
-                                <span>Aplicaciónes de escritorio desarrolladas por nosotros.</span>
+                                <span>Catálogo de aplicaciónes de escritorio realizadas por nosotros, para mostrar a los clientes.</span>
                                 <div className="icon-portfolio" onClick={this.showDesktopComponent}>
                                    <img src={codigo} alt="icono aplicaciones escritorio"></img> 
                                 </div>
