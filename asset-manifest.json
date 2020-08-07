@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/web/static/css/main.0f265e50.chunk.css",
-    "main.js": "/web/static/js/main.82a46919.chunk.js",
-    "main.js.map": "/web/static/js/main.82a46919.chunk.js.map",
+    "main.css": "/web/static/css/main.9260bca4.chunk.css",
+    "main.js": "/web/static/js/main.ab3332bb.chunk.js",
+    "main.js.map": "/web/static/js/main.ab3332bb.chunk.js.map",
     "runtime-main.js": "/web/static/js/runtime-main.48df7c7e.js",
     "runtime-main.js.map": "/web/static/js/runtime-main.48df7c7e.js.map",
-    "static/js/2.237ae42f.chunk.js": "/web/static/js/2.237ae42f.chunk.js",
-    "static/js/2.237ae42f.chunk.js.map": "/web/static/js/2.237ae42f.chunk.js.map",
+    "static/js/2.e1cd3f54.chunk.js": "/web/static/js/2.e1cd3f54.chunk.js",
+    "static/js/2.e1cd3f54.chunk.js.map": "/web/static/js/2.e1cd3f54.chunk.js.map",
     "index.html": "/web/index.html",
-    "precache-manifest.2cdf352fad2579804d88e9cc7d58c449.js": "/web/precache-manifest.2cdf352fad2579804d88e9cc7d58c449.js",
+    "precache-manifest.f0057a7676e0a0436a07e1c133379fca.js": "/web/precache-manifest.f0057a7676e0a0436a07e1c133379fca.js",
     "service-worker.js": "/web/service-worker.js",
-    "static/css/main.0f265e50.chunk.css.map": "/web/static/css/main.0f265e50.chunk.css.map",
-    "static/js/2.237ae42f.chunk.js.LICENSE.txt": "/web/static/js/2.237ae42f.chunk.js.LICENSE.txt",
-    "static/media/android.svg": "/web/static/media/android.2268323f.svg",
+    "static/css/main.9260bca4.chunk.css.map": "/web/static/css/main.9260bca4.chunk.css.map",
+    "static/js/2.e1cd3f54.chunk.js.LICENSE.txt": "/web/static/js/2.e1cd3f54.chunk.js.LICENSE.txt",
+    "static/media/android.svg": "/web/static/media/android.027c58b5.svg",
     "static/media/cham.png": "/web/static/media/cham.b6480230.png",
     "static/media/codigo.svg": "/web/static/media/codigo.3e3f1744.svg",
-    "static/media/cs.svg": "/web/static/media/cs.11a9078a.svg",
+    "static/media/computadora.svg": "/web/static/media/computadora.029e3f97.svg",
     "static/media/internet.svg": "/web/static/media/internet.b785e583.svg",
-    "static/media/javascript.svg": "/web/static/media/javascript.f2bd0c0c.svg",
-    "static/media/sql.svg": "/web/static/media/sql.35091c33.svg",
+    "static/media/sql.svg": "/web/static/media/sql.62dda810.svg",
     "static/media/ux.png": "/web/static/media/ux.7b62ef09.png",
+    "static/media/webIcon.svg": "/web/static/media/webIcon.cecc0131.svg",
     "static/media/zona.svg": "/web/static/media/zona.fbcf7b14.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.48df7c7e.js",
-    "static/js/2.237ae42f.chunk.js",
-    "static/css/main.0f265e50.chunk.css",
-    "static/js/main.82a46919.chunk.js"
+    "static/js/2.e1cd3f54.chunk.js",
+    "static/css/main.9260bca4.chunk.css",
+    "static/js/main.ab3332bb.chunk.js"
   ]
 }
