@@ -38,7 +38,7 @@ class Portfolio extends Component {
 
                             <div className="item-portfolio">
                                 <h4>Web</h4>
-                                <span>Catálogo de páginas web realizadas por nosotros, para mostrar a los clientes.</span>
+                                <span>Te invitamos a que mires nuestro catálogo de aplicaciones web y las tecnologías que usamos para hacerlas posibles.</span>
                                 <div className="icon-portfolio" onClick={this.showWebComponent}>
                                    <img src={web} alt="icono paginas web"></img> 
                                 </div>
@@ -49,7 +49,7 @@ class Portfolio extends Component {
 
                             <div className="item-portfolio">
                                 <h4>Android</h4>
-                                <span>Catálogo de aplicaciónes Android realizadas por nosotros, para mostrar a los clientes.</span>
+                                <span>Te invitamos a que mires nuestro catalógo de aplicaciones Android así como las tecnologías que usamos para hacerlas posibles.</span>
                                 <div className="icon-portfolio" onClick={this.showAndroidComponent}>
                                    <img src={zona} alt="icono android"></img> 
                                 </div>
@@ -60,7 +60,7 @@ class Portfolio extends Component {
 
                             <div className="item-portfolio">
                                 <h4>Escritorio</h4>
-                                <span>Catálogo de aplicaciónes de escritorio realizadas por nosotros, para mostrar a los clientes.</span>
+                                <span>Te invitamos a que mires nuestro catalógo de aplicaciones de escritorio así como las tecnologías que usamos para hacerlas posibles.</span>
                                 <div className="icon-portfolio" onClick={this.showDesktopComponent}>
                                    <img src={codigo} alt="icono aplicaciones escritorio"></img> 
                                 </div>

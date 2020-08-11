@@ -101,6 +101,11 @@ h2{
     margin-top: 0rem;
 }
 
+.active{
+    color: #B9BAA3 !important;
+    background-color: #902923 !important;
+}
+
 .contact label{
     color: #B9BAA3;
     font-size: 1.2rem;
@@ -112,6 +117,13 @@ h2{
     background-color: #D6D5C9;
     padding: 0.3rem;
     border: 0;
+    box-shadow: inset 0 1px 3px #0A100D;
+}
+
+.contact input:focus{
+    -webkit-box-shadow: 2px 1px 17px 3px rgba(10,16,13,0.41);
+    -moz-box-shadow: 2px 1px 17px 3px rgba(10,16,13,0.41);
+    box-shadow: 2px 1px 17px 3px rgba(10,16,13,0.41);  
 }
 
 .contact select{
@@ -120,11 +132,23 @@ h2{
     background-color: #D6D5C9;
 }
 
+.contact select:focus{
+    -webkit-box-shadow: 2px 1px 17px 3px rgba(10,16,13,0.41);
+    -moz-box-shadow: 2px 1px 17px 3px rgba(10,16,13,0.41);
+    box-shadow: 2px 1px 17px 3px rgba(10,16,13,0.41);
+}
+
 .contact textarea{
     border: 0;
     margin-bottom: 3rem;
     background-color: #D6D5C9;
     padding: 0.3rem;
+}
+
+.contact textarea:focus{
+    -webkit-box-shadow: 2px 1px 17px 3px rgba(10,16,13,0.41);
+    -moz-box-shadow: 2px 1px 17px 3px rgba(10,16,13,0.41);
+    box-shadow: 2px 1px 17px 3px rgba(10,16,13,0.41);
 }
 
 .footer{
@@ -208,6 +232,8 @@ h2{
 
 .content-services p {
     font-size: 1.2rem;
+    text-align: justify;
+    cursor: default;
 }
 
 .sqr-services {
@@ -221,7 +247,7 @@ h2{
 }
 
 .sqr-services:hover{
-    background: #0A100D;
+    background-color: rgb(26, 26, 26);
     color: #D6D5C9;
     -webkit-box-shadow: 1px 1px 45px -7px rgba(214,213,201,0.61);
     -moz-box-shadow: 1px 1px 45px -7px rgba(214,213,201,0.61);
@@ -293,7 +319,7 @@ h2{
 }
 
 .item-portfolio{
-    background-color: #B9BAA3;
+    background-color: #D6D5C9;
     padding: 1.5rem;
     margin-right: 2rem;
     margin-left: 2rem;
@@ -348,11 +374,17 @@ h2{
     visibility: visible;
     text-align: center;
     font-size: 0.9rem;
-    color: #B9BAA3;
+    color: #902923;
 }
 
 #txt-portfolio{
     margin-top: 4rem;
+}
+
+.txt-contact a{
+    color: #D6D5C9;
+    text-decoration: none;
+    
 }
 
 @keyframes rotate360 { 
@@ -364,6 +396,7 @@ h2{
 #link-imagenes a {
     text-decoration: none;
     color: #902923;
+    font-size: 0.8rem;
 }
 
 #link-imagenes a:hover{
@@ -425,6 +458,7 @@ h2{
     .sqr-services {
         margin: 1rem;
         width: auto;
+        height: auto;
     }
     .content-services p {
         font-size: 1.5rem;
@@ -440,6 +474,12 @@ h2{
     }
     .txt-contact h2{
         font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 743px){
+    .sqr-services{
+        height: auto;
     }
 }
 
@@ -497,6 +537,9 @@ h2{
 }
 
 @media(max-width: 561px){
+    .center{
+        margin-top: 7rem;
+    }
     .Presentation {
         font-size: 1.6rem;
     }
@@ -506,9 +549,6 @@ h2{
     .footer {
         margin-top: 7rem;
     }
-    .sqr-services {
-        height: 24rem;
-    }
     .Error404 h2 {
         margin-top: 6rem;
     }
@@ -517,7 +557,6 @@ h2{
     }
     .mobile-menu{
         visibility: visible;
-        background: aqua;
     }
     .txt-contact p{
         font-size: 1.4rem;
@@ -547,7 +586,7 @@ h2{
         font-size: 4.2rem;
     }
     .sqr-services p {
-        margin-top: 0;
+        margin-top: 1;
     }
 }
 
@@ -556,7 +595,7 @@ h2{
         font-size: 1rem;
     }
     .logo {
-        width: 16rem;
+        width: 12rem;
     }
     .Presentation {
         font-size: 1.2rem;
@@ -565,7 +604,7 @@ h2{
         font-size: 1rem;
     }
     .sqr-services {
-        height: 19rem;
+        height: auto;
     }
     .icon-plane {
         font-size: 9rem;
@@ -580,16 +619,16 @@ h2{
 
 @media(max-width: 321px){
     .logo {
-        width: 13rem;
-    }
-    .center {
-        margin-top: 2rem;
+        width: 11rem;
     }
     .Error404 h3 p {
         font-size: 0.7rem;
     }
     .Error404 h2 {
         font-size: 3.2rem;
+    }
+    .type-wrap span{
+        font-size: 1.2rem;
     }
 }
 
@@ -640,21 +679,6 @@ p {
       }
   }
 
-  .sqr-services img {
-    animation-duration: 2s;
-    animation-name: latir;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes latir {
-      from{
-        width: 8.7rem;
-      }
-      to{
-        width: 1;
-      }
-  }
-
   .contact {
       animation-duration: 2s;
       animation-name: formulario;
@@ -667,4 +691,13 @@ p {
       to{
         margin-top: 1;
       }
+  }
+
+  /*Typed js*/
+
+  .type-wrap{
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: bolder;
+      color: #B9BAA3;
   }

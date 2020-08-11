@@ -14,7 +14,7 @@ class Form extends Component {
 
     componentDidMount() {
         alertify.set('notifier','position', 'bottom-right');
-        alertify.alert('Aviso', 'Tu formulario se enviara al equipo de CHAM', function () { alertify.notify('¡ Cuéntanos que necesitas !'); });
+        alertify.alert('Aviso de privacidad', 'Su formulario se enviará al equipo de CHAM. Sus datos están seguros con nosotros, sólo los requerimos para poder establecer contacto con usted.', function () { alertify.notify('¡ Cuéntanos que necesitas !'); });
     }
 
     changeValues = ({ name, value }) => {

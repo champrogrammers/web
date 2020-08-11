@@ -1,21 +1,30 @@
 import React, { Component } from 'react';
-import alertify from 'alertifyjs';
 import cham from '../res/cham.png';
+import Typed from 'typed.js';
 
 class MainSection extends Component {
 
     componentDidMount() {
-        let date = new Date();
-        let hour = date.getHours();
-        if (hour >= 20) {
-            alertify.notify('Buenas Noches');
-        }
-        if (hour >= 1 && hour <= 12) {
-            alertify.notify('Buenos Dias');
-        }
-        if (hour >= 13 && hour <= 19) {
-            alertify.notify('Buenas Tardes');
-        }
+        this.typed = new Typed (this.el, {
+            strings: [
+                'Páginas web.', 
+                'Aplicaciones web.',
+                'Aplicaciones Android.', 
+                'Aplicaciones de escritorio.', 
+                'Bases de datos.',
+                'Diseños profesionales.',
+                'Frameworks de JS.',
+                '¡ Contactanos !.'
+                ],
+            typeSpeed: 80,
+            smartBackspace: true,
+            backDelay: 800,
+            loop: true
+        })
+    }
+
+    componentWillUnmount(){
+        this.typed.destroy();
     }
 
     viewServices = () => {
@@ -24,6 +33,7 @@ class MainSection extends Component {
 
     render() {
         window.scroll(0, 0);
+
         return (
             <React.Fragment>
                 <img className="logo" src={cham} alt="logo" />
@@ -31,6 +41,11 @@ class MainSection extends Component {
                     <p>CHAM</p>
                     <p><strong>Soluciones en Software</strong> a la medida</p>
                 </div>
+
+                <div className="type-wrap">
+                  <span ref={(el) => { this.el = el; }}></span>  
+                </div>
+                
                 <div className="descripion">
                     <p>Te ayudamos a <strong>actualizar tu marca o negocio</strong> haciéndolo más eficaz y tecnologico, adecuandonos a tu giro.</p>
                 </div>

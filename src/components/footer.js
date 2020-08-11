@@ -12,10 +12,10 @@ class Footer extends Component {
                 <div className="row">
                     <ul>
                         Mapa de sitio
-                        <li><NavLink to="/Home">Inicio</NavLink></li>
-                        <li><NavLink to="/Services">Servicios</NavLink></li>
-                        <li><NavLink to="/Portfolio">Portafolio</NavLink></li>
-                        <li><NavLink to="/Contact">Contacto</NavLink></li>
+                        <li><NavLink activeClassName="active-responsive" to="/Home">Inicio</NavLink></li>
+                        <li><NavLink activeClassName="active-responsive" to="/Services">Servicios</NavLink></li>
+                        <li><NavLink activeClassName="active-responsive" to="/Portfolio">Portafolio</NavLink></li>
+                        <li><NavLink activeClassName="active-responsive" to="/Contact">Contacto</NavLink></li>
                     </ul>
                 </div>
                 <div className="row">
@@ -35,7 +35,8 @@ class Footer extends Component {
                 </div>
                 <div className="clearfix">
                     <div className="txt-footer">
-                        <p><span>&#169;</span>{`Copyrigth CHAM - ${year}`}</p>
+                        <p><span>&#169;</span> {year}  CHAM programmers</p>
+                        <p>Todos los derechos reservados.</p>
                     </div>
                 </div>
 

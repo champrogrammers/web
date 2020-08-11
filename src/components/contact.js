@@ -12,8 +12,6 @@ class Contact extends Component {
 
     render() {
 
-        const title = `Envianos un correo electrónico a "Champrogrammers@gmail.com" para cotizar el servicio que deseas.`;
-
         return (
             <div>
                     <div>
@@ -21,7 +19,7 @@ class Contact extends Component {
                         <i className="fa fa-paper-plane-o" aria-hidden="true"></i>
                     </div>
                     <div className="txt-contact">
-                        <p>{title}</p>
+                        <p>Envianos un correo electrónico a "<a href="mailto:champrogrammers@gmail.com">champrogrammers@gmail.com</a>" para cotizar el servicio que deseas.</p>
                         <p>Con gusto te atenderemos</p>
                         <p>ó</p>
                         <p>Rellena el formulario</p>
