@@ -13,9 +13,9 @@ class Contact extends Component {
     render() {
 
         return (
-            <div>
+            <div className="contact-center">
                     <div>
-                    <div className="icon-plane">
+                    <div className="icon-plane animate__animated animate__rubberBand">
                         <i className="fa fa-paper-plane-o" aria-hidden="true"></i>
                     </div>
                     <div className="txt-contact">

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { selectFunction } from '../res/select-js/select';
+import '../styles/select.css';
 import alertify from 'alertifyjs';
 import axios from 'axios';
 
@@ -13,8 +15,8 @@ class Form extends Component {
     }
 
     componentDidMount() {
-        alertify.set('notifier','position', 'bottom-right');
-        alertify.alert('Aviso de privacidad', 'Su formulario se enviará al equipo de CHAM. Sus datos están seguros con nosotros, sólo los requerimos para poder establecer contacto con usted.', function () { alertify.notify('¡ Cuéntanos que necesitas !'); });
+        selectFunction();
+        window.scroll(0, 0);
     }
 
     changeValues = ({ name, value }) => {
@@ -23,6 +25,13 @@ class Form extends Component {
         });
     }
 
+    obtainSelectContent() {
+        let selectItem = document.getElementsByClassName("select-selected")[0].textContent;
+        this.setState(()=>{
+            return {"development": selectItem}
+        })
+    }
+    
     redirectToHome = () => {
         this.props.history.push('/Home');
     }
@@ -35,69 +44,73 @@ class Form extends Component {
         axios
             .post('https://champrogrammers.000webhostapp.com/makeTicket.php', JSON.stringify(this.state))
             .then(response => {
-                alertify.set('notifier','position', 'top-center');
+                alertify.set('notifier', 'position', 'top-center');
                 alertify.alert(`Se envio el formulario`, `Podemos tardar unas horas en contestar, en cuanto tengamos una estimación se la enviaremos a la dirección de correo: ${this.state.email}`,
-            function () { alertify.message(thanksMessage); });
-            this.redirectToHome();
+                    function () { alertify.message(thanksMessage); });
+                this.redirectToHome();
             })
             .catch(error => {
-                alertify.set('notifier','position', 'top-center');
-                alertify.alert('Error', 'No se ha mandado tu mensaje', function() {alertify.error(errorMsg)});
+                alertify.set('notifier', 'position', 'top-center');
+                alertify.alert('Error', 'No se ha mandado tu mensaje', function () { alertify.error(errorMsg) });
             })
-        
+
     }
 
     render() {
 
         return (
             <React.Fragment>
-                <form className="contact" onSubmit={this.recibeForm}>
+                
+                <div className="form-bg">
+                    <form className="contact animate__animated animate__bounceInDown" onSubmit={this.recibeForm}>
 
-                    <label htmlFor="Nombre">Nombre *</label>
-                    <input name="name" type="text" placeholder="Escribe tu nombre" required
-                        onChange={event => this.changeValues(event.target)}
-                    />
+                        <h2>Formato de cotización</h2>
 
+                        <div id="names">
+                            <input id="name1" name="name" type="text" placeholder="Nombre *" required
+                                onChange={event => this.changeValues(event.target)}
+                            />
 
-                    <label htmlFor="Apellido">Apellido *</label>
-                    <input name="sureName" type="text" placeholder="Escribe tu apellido" required
-                        onChange={event => this.changeValues(event.target)}
-                    />
+                            <input name="sureName" type="text" placeholder="Apellido *" required
+                                onChange={event => this.changeValues(event.target)}
+                            />
+                        </div>
 
+                        <div id="sdata">
 
-                    <label htmlFor="Email">Correo Electrónico *</label>
-                    <input name="email" type="email" placeholder="Correo electrónico" required
-                        onChange={event => this.changeValues(event.target)}
-                    />
+                            <input name="email" type="email" placeholder="Correo Electrónico *" required
+                                onChange={event => this.changeValues(event.target)}
+                            />
 
-
-                    <label htmlFor="Desarrollo">¿Que tipo de desarrollo requieres? *</label>
-                    <select name="development" id="Desarrollo" required
-                        onChange={event => this.changeValues(event.target)}
-                    >
-                        <option value={""}>- Selecciona uno -</option>
-                        <option value="Pagina web">Pagina web</option>
-                        <option value="Aplicación web">Aplicación web</option>
-                        <option value="Aplicación Android">Aplicación Android</option>
-                        <option value="Aplicación Escritoiro">Aplicación Escritorio</option>
-                        <option value="Base de datos">Diseño de base de datos</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-
-
-                    <label htmlFor="descripcion">Cuentanos un poco de tu idea *</label>
-                    <textarea name="idea" rows="10" placeholder="Describe brevemente que es lo que requieres (Necesitamos esta información para estimar un presupuesto)"
-                        required onChange={event => this.changeValues(event.target)}
-                    ></textarea>
+                            <div className="custom-select" onClick={() => this.obtainSelectContent()}>
+                                <select name="development" id="Desarrollo" required
+                                >
+                                    <option value={""}>- Desarrollo requerido -</option>
+                                    <option value="Página web">Página web</option>
+                                    <option value="Aplicación web">Aplicación web</option>
+                                    <option value="Aplicación Android">Aplicación móvil</option>
+                                    <option value="Aplicación escritoiro">Aplicación escritorio</option>
+                                    <option value="Base de datos">Diseño de base de datos</option>
+                                    <option value="Interfaz de usuario">Interfaz de usuario</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
 
 
-                    <div className="txt-contact">
-                        <button type="submit">Enviar</button>
-                    </div>
+                            <textarea name="idea" rows="7" placeholder="Describe el desarrollo que requieres * (necesitamos esta información para cotizar el trabajo.)"
+                                required onChange={event => this.changeValues(event.target)}
+                            ></textarea>
 
-                </form>
+
+                            <div className="button-form">
+                                <button type="submit">Enviar</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
             </React.Fragment>
-
         )
     }
 

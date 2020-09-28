@@ -38,12 +38,12 @@ class Hamburguer extends Component {
                                 </div>
                                 <div id="facebook-icon">
                                     <a href="https://www.facebook.com/Cham-Programmers-116797153450643/" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                        <i className="fa fa-facebook-square" aria-hidden="true"></i>
                                     </a>
                                 </div>
                                 <div id="mail-icon">
                                     <a href="mailto:champrogrammers@gmail.com" rel="noopener noreferrer">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <i className="fa fa-envelope" aria-hidden="true"></i>
                                     </a>
                                 </div>
                             </div>

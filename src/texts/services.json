@@ -1,0 +1,63 @@
+{
+    "Services": {
+        "webDevelopments": "¿Deseas tener tu propio espacio en internet?, podemos ayudarte con nuestros servicios web. Si eres un negocio, persona, institución, etc. Desarrollaremos una página web profesional y de calidad perfecta para tus necesidades.",
+        "movileDevelopments": "Si usted require una aplicación Android, nosotros podemos cubrir su necesidad, contamos con personal capacitado para realizar su aplicación sobre el sistema oparativo móvil más utilizado del mundo. Diseñamos tu aplicación móvil 100% apegada a tus necesidades.",
+        "desktopDevelopments": "Desarrollamos sistemas de escritorio de calidad y de fácil manejo para satisfacer tus requerimientos, contacta a nuestros expertos para cotizar tu futura aplicación de escritorio.",
+        "databases": "Diseñamos e implementamos bases de datos relacionales (SQL) cumpliendo con los estándares de formalización en nuestros desarrollos que así lo requieran, también ponemos a tu disposición el servicio de unicamente desarrollar tu base de datos.",
+        "designWorks": "Ofrecemos diseños elegantes, profesionales, responsivos y de alta calidad, para mejorar la experiencia de los usuarios cuando visiten tu web o aplicación."
+    },
+    "Banners": {
+        "Web": [
+            {
+                "one": "Tener un buen diseño en tu web es importante para demostrar seriedad y profesionalismo, por eso es que nuestras páginas web cuentan con diseño profesional y responsivo para todo tipo de necesidades."
+            },
+            {
+                "two": "Ofrecemos servicios de SEO para que tus clientes te encuentren usando buscadores de internet populares, por lo que siempre estarás en los resultados de búsqueda que tengan que ver con tu marca."
+            },
+            {
+                "three": "Tu página web estará alojada en un servidor totalmente conectado a internet y a tu dominio de preferencia. Listo para que tus clientes accedan desde cualquier parte a tu web."
+            }
+        ],
+        "movile": [
+            {
+                "one": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
+            },
+            {
+                "two": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
+            },
+            {
+                "three": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
+            }
+        ],
+        "desktop": [
+            {
+                "one": "XD"
+            },
+            {
+                "two": "XD"
+            },
+            {
+                "three": "XD"
+            }
+        ],
+        "databases": [
+            {
+                "one": "SQL1"
+            },
+            {
+                "two": "SQL2"
+            }
+        ],
+        "designs": [
+            {
+                "one": "D1"
+            },
+            {
+                "two": "D2"
+            },
+            {
+                "three": "D3"
+            }
+        ]
+    }
+}

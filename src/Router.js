@@ -5,13 +5,13 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import Navbar from '../src/components/navbar';
 import Footer from '../src/components/footer';
 import MainSection from '../src/components/mainSection';
-import Services from '../src/components/services';
 import Contact from '../src/components/contact';
 import Portfolio from './components/portfolio';
 import Error404 from './components/error404';
 import Form from './components/form';
 import Desktop from './components/desktop';
 import Webapps from './components/webapps';
+import Services from './components/services';
 
 
 class RouterM extends Component {

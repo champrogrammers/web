@@ -11,7 +11,7 @@ class Footer extends Component {
             <footer className="footer">
                 <div className="row">
                     <ul>
-                        Mapa de sitio
+                        Mapa del sitio
                         <li><NavLink activeClassName="active-responsive" to="/Home">Inicio</NavLink></li>
                         <li><NavLink activeClassName="active-responsive" to="/Services">Servicios</NavLink></li>
                         <li><NavLink activeClassName="active-responsive" to="/Portfolio">Portafolio</NavLink></li>

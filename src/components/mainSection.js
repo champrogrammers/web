@@ -38,8 +38,8 @@ class MainSection extends Component {
             <React.Fragment>
                 <img className="logo" src={cham} alt="logo" />
                 <div className="Presentation">
-                    <p>CHAM</p>
-                    <p><strong>Soluciones en Software</strong> a la medida</p>
+                    <p className="animate__animated animate__tada">CHAM</p>
+                    <p className="animate__animated animate__backInLeft"><strong>Soluciones en Software</strong> a la medida</p>
                 </div>
 
                 <div className="type-wrap">
@@ -49,7 +49,7 @@ class MainSection extends Component {
                 <div className="descripion">
                     <p>Te ayudamos a <strong>actualizar tu marca o negocio</strong> haciéndolo más eficaz y tecnologico, adecuandonos a tu giro.</p>
                 </div>
-                <div className="txt-contact">
+                <div className="btn-hpANDfp">
                     <button onClick={this.viewServices}>Ver Servicios</button>
                 </div>
             </React.Fragment>
