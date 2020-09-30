@@ -1,80 +1,87 @@
 import React, { Component } from 'react';
-import alertify from 'alertifyjs';
-import web from '../res/iconos/internet.svg';
-import zona from '../res/iconos/zona.svg';
-import codigo from '../res/iconos/codigo.svg';
+import "../styles/portfolio.css"
 
 class Portfolio extends Component {
-
-    //Click en icono de escritorio
-    showDesktopComponent = () => {
-        alertify.notify('Trabajos de escritorio');
-        setTimeout( () => {
-            this.props.history.push('/desktopApps')
-        }, 900)
-    }
-    
-    //Click en icono android
-    showAndroidComponent(){
-        alertify.notify('Aún no tenemos aplicaciónes android en portafolio');
-    }
-
-    //Click en icono web
-    showWebComponent = () => {
-        alertify.notify('Trabajos web');
-        setTimeout ( () => {
-            this.props.history.push('/webApps');
-        }, 900 )
-    }
 
     render() {
         window.scroll(0, 0);
         return (
             <React.Fragment>
-                <div className="portfolio">
-                    <div className="txt-contact">
-                        <h2>Nuestro portafolio hasta ahora</h2>
-                        <div id="container-works">
-
-                            <div className="item-portfolio">
-                                <h4>Web</h4>
-                                <span>Te invitamos a que mires nuestro catálogo de aplicaciones web y las tecnologías que usamos para hacerlas posibles.</span>
-                                <div className="icon-portfolio" onClick={this.showWebComponent}>
-                                   <img src={web} alt="icono paginas web"></img> 
-                                </div>
-                                <div className="indication">
-                                    Haz click en el icono para ver más
-                                </div>
-                            </div>
-
-                            <div className="item-portfolio">
-                                <h4>Android</h4>
-                                <span>Te invitamos a que mires nuestro catalógo de aplicaciones Android así como las tecnologías que usamos para hacerlas posibles.</span>
-                                <div className="icon-portfolio" onClick={this.showAndroidComponent}>
-                                   <img src={zona} alt="icono android"></img> 
-                                </div>
-                                <div className="indication">
-                                    Haz click en el icono para ver más
-                                </div>
-                            </div>
-
-                            <div className="item-portfolio">
-                                <h4>Escritorio</h4>
-                                <span>Te invitamos a que mires nuestro catalógo de aplicaciones de escritorio así como las tecnologías que usamos para hacerlas posibles.</span>
-                                <div className="icon-portfolio" onClick={this.showDesktopComponent}>
-                                   <img src={codigo} alt="icono aplicaciones escritorio"></img> 
-                                </div>
-                                <div className="indication">
-                                    Haz click en el icono para ver más
-                                </div>
-                            </div>
-
+                <div className="tittle-portfolio">
+                    <h2 className="animate__animated animate__fadeInDown">Portafolio de trabajos</h2>
+                    <p className="animate__animated animate__backInUp">
+                        En esta sección usted podrá encontrar los trabajos realizados por nosotros.</p>
+                </div>
+                <div id="portfolio-center">
+                    <div className="itm">
+                        <div className="work-photo">
+                            <img src="https://source.unsplash.com/random" />
                         </div>
-
-                        <div id="txt-portfolio">
-                            <p>Todos los proyectos han sido desarrollados en base a los requerimientos de los clientes.</p>
+                        <div className="work-text">
+                            <h3>Interfaz para restaurante</h3>
+                            <p>
+                                Aplicación de ecritorio con el objetivo de hacer consultas a una base de datos alojada en un servidor de
+                                SQLserver, la aplicación facilita la administración de facturas a un restaurante de mariscos de Guadalajara.
+                            </p>
+                            <div id="tags">
+                                <span>
+                                    #Java
+                                </span>
+                                <span>
+                                    #FXML
+                                </span>
+                                <span>
+                                    #SQL
+                                </span>
+                            </div>
+                            <div className="work-buttons">
+                                <button>
+                                    Ver Detallles
+                            </button>
+                            </div>
                         </div>
-                        
+                    </div>
+
+                    <div id="clear-fix"></div>
+
+                    <div className="itm">
+                        <div className="work-photo">
+                            <img src="https://source.unsplash.com/random" />
+                        </div>
+                        <div className="work-text">
+                            <h3>Página de portafolio de CHAM programmers</h3>
+                            <p>
+                                Es una página web reactiva (SPA) tiene como objetivo mostrar el portafolio de la empresa, sus servicios y
+                                una sección para que los clientes se puedan poner en contacto.
+                                Es la misma página web que usted está viendo en este momento.
+                            </p>
+                            <div id="tags">
+                                <span>
+                                    #ReactJS
+                                </span>
+                                <span>
+                                    #JavaScript
+                                </span>
+                                <span>
+                                    #PHP
+                                </span>
+                                <span>
+                                    #CSS3
+                                </span>
+                                <span>
+                                    #HTML5
+                                </span>
+                            </div>
+                            <div className="work-buttons">
+                                <button> Ver Detallles </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="coming-soon">
+                        <span>
+                            Próximamente más desarrollos...
+                        </span>
                     </div>
                 </div>
             </React.Fragment>
