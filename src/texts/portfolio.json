@@ -1,0 +1,18 @@
+{
+    "works": [
+        {
+            "title": "Interfaz para restaurante",
+            "info": "Aplicación de ecritorio con el objetivo de hacer consultas a una base de datos alojada en un servidor de SQLserver, la aplicación facilita la administración de facturas a un restaurante de mariscos de Guadalajara.",
+            "image": "https://source.unsplash.com/random",
+            "tags": ["#Java", "#FXML", "#SQL"],
+            "link": "https://www.google.com"
+        },
+        {
+            "title": "Página de portafolio CHAM programmers",
+            "info": "Es una página web reactiva (SPA) tiene como objetivo mostrar el portafolio de la empresa, sus servicios y una sección para que los clientes se puedan poner en contacto. Es la misma página web que usted está viendo en este momento.",
+            "image": "https://source.unsplash.com/random",
+            "tags": ["#ReactJS", "#PHP", "#HTML5", "#CSS3"],
+            "link": "https://www.google.es"
+        }
+    ]
+}
