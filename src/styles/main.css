@@ -1,0 +1,229 @@
+#img-trademark {
+    background-image: url("../res/image-main/keyboard-561124_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 35rem;
+    margin-top: -3rem;
+    margin-bottom: -3rem;
+    filter: contrast(1.3);
+    -webkit-box-shadow: inset 1px 1px 300px 83px rgba(0,0,0,0.51);
+    -moz-box-shadow: inset 1px 1px 300px 83px rgba(0,0,0,0.51);
+    box-shadow: inset 1px 1px 300px 83px rgba(0,0,0,0.51);
+}
+
+.main-text {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.main-text img {
+    width: 15rem;
+    padding-top: 4rem;
+    filter: contrast(0.8);
+}
+
+.main-text h1 {
+    color: white;
+    margin: 0;
+}
+
+.main-text p {
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+
+.bar-contact {
+    padding: 0.8rem;
+    background-color: #0A100D;
+    color: whitesmoke;
+    text-align: end;
+}
+
+.bar-contact a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+.bar-contact a:hover {
+    transition: ease-in 0.2s;
+    color: #c83d3e;
+}
+
+.bar-contact i {
+    margin-right: 5px;
+}
+
+#main-content {
+    background-color: white;
+    margin-bottom: -3rem;
+}
+
+#rows {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-content .f-view {
+    width: 50%;
+}
+
+#f-view {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#f-view p {
+    width: 70%;
+    text-align: justify;
+    display: block;
+    margin: auto;
+    line-height: 24px;
+}
+
+#f-view h2 {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: #0A100D;
+    margin-bottom: 0;
+}
+
+#f-view i {
+    font-size: 5rem;
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.l-view {
+    text-align: center;
+    padding: 3rem;
+    display: block;
+    margin: auto;
+}
+
+.l-view h3 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+.l-view i {
+    font-size: 4rem;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.l-view button {
+    background-color: #0A100D;
+    color: white;
+    border: 1.5px solid #c83d3e;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.l-view button:hover {
+    background-color: darkgreen;
+    transition: ease-in 0.3s;
+}
+
+.bsk-over i {
+    transition: ease-in 0.2s;
+    color: rgb(32, 101, 228);
+}
+
+.light-over i {
+    transition: ease-in 0.2s;
+    color: rgb(247, 231, 14);
+}
+
+hr {
+    height: 3px;
+    width: 20rem;
+    background-color: #c83d3e;
+    border: 0px transparent;
+}
+
+@media(max-width: 1005px) {
+    .main-text p {
+        font-size: 1rem;
+    }
+    .type-wrap {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 882px) {
+    #rows {
+        display: flex;
+        flex-direction: column;
+    }
+    #f-view h2 {
+        margin-top: 0;
+    }
+    #f-view {
+        padding-bottom: 0rem;
+    }
+}
+
+@media(max-width: 783px) {
+    .main-text img {
+        padding-top: 1rem !important;
+        width: 9rem;
+    }
+    #img-trademark {
+        height: 22rem;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .main-text p {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 562px) {
+    #main-content {
+        margin-bottom: -7rem;
+    }
+}
+
+@media(max-width: 488px) {
+    .main-text {
+        width: 85%;
+    }
+}
+
+@media(max-width: 435px) {
+    .bar-contact {
+        display: flex;
+        text-align: initial;
+        flex-direction: column;
+    }
+    .bar-contact a {
+        padding: 0.4rem;
+    }
+    #img-trademark {
+        height: 25rem;
+    }
+}
+
+@media(max-width: 403px) {
+    .l-view h3 {
+        font-size: 1.3rem;
+    }
+    hr {
+        width: 12rem;
+    }
+    #f-view h2 {
+        font-size: 1.2rem;
+    }
+}
