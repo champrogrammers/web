@@ -45,7 +45,7 @@ class MainSection extends Component {
                             champrogrammers@gmail.com
                         </a>
 
-                        <a href="#" rel="noopener noreferrer" >
+                        <a href="https://web.whatsapp.com/" rel="noopener noreferrer">
                             <i className="fa fa-whatsapp" aria-hidden="true"></i>
                             +52 3333333333
                         </a>

@@ -3,16 +3,16 @@
         {
             "title": "Interfaz para restaurante",
             "info": "Aplicación de escritorio con el objetivo de hacer consultas a una base de datos alojada en un servidor de SQLserver, la aplicación facilita la administración de facturas a un restaurante de mariscos de Guadalajara.",
-            "image": "https://source.unsplash.com/random",
+            "image": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg",
             "tags": ["#Java", "#FXML", "#SQL"],
-            "link": "https://www.google.com"
+            "link": "https://drive.google.com/drive/folders/1e4Mt-E5I25BBSusLjSWr_U32tJ6t1QJP"
         },
         {
             "title": "Página de portafolio CHAM programmers",
             "info": "Es una página web reactiva (SPA) tiene como objetivo mostrar el portafolio de la empresa, sus servicios y una sección para que los clientes se puedan poner en contacto. Es la misma página web que usted está viendo en este momento.",
-            "image": "https://source.unsplash.com/random",
+            "image": "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_1280.jpg",
             "tags": ["#ReactJS", "#PHP", "#HTML5", "#CSS3"],
-            "link": "https://www.google.es"
+            "link": "https://champrogrammers.github.io/web"
         }
     ]
 }

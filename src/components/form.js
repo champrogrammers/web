@@ -43,7 +43,7 @@ class Form extends Component {
         let thanksMessage = `Gracias por contactarnos ${name}, se ha enviado tu petición al equipo de programadores de CHAM`;
         let errorMsg = `${name}, si el problema persiste te recomendamos mandarnos correo a Champrogrammers@gmail.com`;
         axios
-            .post('https://champrogrammers.000webhostapp.com/makeTicket.php', JSON.stringify(this.state))
+            .post('https://blogredes20110469.000webhostapp.com/makeTicket.php', JSON.stringify(this.state))
             .then(response => {
                 alertify.set('notifier', 'position', 'top-center');
                 alertify.alert(`Se envio el formulario`, `Podemos tardar unas horas en contestar, en cuanto tengamos una estimación se la enviaremos a la dirección de correo: ${this.state.email}`,

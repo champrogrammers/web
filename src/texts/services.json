@@ -31,32 +31,32 @@
         ],
         "desktop": [
             {
-                "one": "XD"
+                "one": "Desarrollos codificados y compilados en diferentes lenguajes de programación, perfecto para que se adapten a tus necesidades sin importar el sistema operativo que manejes."
             },
             {
-                "two": "XD"
+                "two": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
             },
             {
-                "three": "XD"
+                "three": "Tú dices que hacer y nosotros lo hacemos, los desarrollos se adaptan a las necesidades que usted requiera."
             }
         ],
         "databases": [
             {
-                "one": "SQL1"
+                "one": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
             },
             {
-                "two": "SQL2"
+                "two": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
             }
         ],
         "designs": [
             {
-                "one": "D1"
+                "one": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
             },
             {
-                "two": "D2"
+                "two": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
             },
             {
-                "three": "D3"
+                "three": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
             }
         ]
     }

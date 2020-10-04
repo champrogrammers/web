@@ -223,7 +223,7 @@ class Services extends Component {
                     <div className="cards">
                         <div id="card-element">
                             <img src={keyboardIcon} alt="Design include"></img>
-                            <h3>Ejemplo</h3>
+                            <h3>Codificación</h3>
                             <span>
                                 {texts.Banners.desktop[0].one}
                             </span>
@@ -237,7 +237,7 @@ class Services extends Component {
                         </div>
                         <div id="card-element">
                             <img src={calibreIco} alt="Design include"></img>
-                            <h3>Ejemplo</h3>
+                            <h3>A la medida</h3>
                             <span>
                                 {texts.Banners.desktop[2].three}
                             </span>
