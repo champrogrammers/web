@@ -75,14 +75,6 @@ class Services extends Component {
                                 <span ref={(el) => { this.el = el; }}></span>
                             </div>
 
-                            <div className="btn-service">
-                                <button>
-                                    <span>
-                                        Desarrollo web <i class="fa fa-globe" aria-hidden="true"></i>
-                                    </span>
-                                </button>
-                            </div>
-
                             <div className="btn-service-contact">
                                 <button onClick={this.viewForm}>
                                     <span>
@@ -138,14 +130,6 @@ class Services extends Component {
                                 {texts.Services.movileDevelopments}
                             </div>
 
-                            <div className="btn-service">
-                                <button>
-                                    <span>
-                                        Desarrollo móvil <i class="fa fa-mobile" aria-hidden="true"></i>
-                                    </span>
-                                </button>
-                            </div>
-
                             <div className="btn-service-contact">
                                 <button onClick={this.viewForm}>
                                     <span>
@@ -194,14 +178,6 @@ class Services extends Component {
                             </h2>
                             <div className="priority-tittle">
                                 {texts.Services.desktopDevelopments}
-                            </div>
-
-                            <div className="btn-service">
-                                <button>
-                                    <span>
-                                        Desarrollo web <i class="fa fa-globe" aria-hidden="true"></i>
-                                    </span>
-                                </button>
                             </div>
 
                             <div className="btn-service-contact">
@@ -255,17 +231,8 @@ class Services extends Component {
                                 Soluciones en bases de datos
                             </h2>
 
-
                             <div className="priority-tittle">
                                 {texts.Services.databases}
-                            </div>
-
-                            <div className="btn-service">
-                                <button>
-                                    <span>
-                                        Bases de datos <i class="fa fa-database" aria-hidden="true"></i>
-                                    </span>
-                                </button>
                             </div>
 
                             <div className="btn-service-contact">
@@ -311,14 +278,6 @@ class Services extends Component {
 
                             <div className="priority-tittle">
                                 {texts.Services.designWorks}
-                            </div>
-
-                            <div className="btn-service">
-                                <button>
-                                    <span>
-                                        Desarrollo UI/UX <i class="fa fa-pencil" aria-hidden="true"></i>
-                                    </span>
-                                </button>
                             </div>
 
                             <div className="btn-service-contact">

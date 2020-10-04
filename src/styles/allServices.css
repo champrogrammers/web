@@ -46,33 +46,6 @@
     margin-bottom: 0.5rem;
 }
 
-.btn-service button{
-    float: left;
-    margin-right: 2rem;
-    margin-top: 1rem;
-    border-radius: 5px;
-    height: 3rem;
-    width: 11rem;
-    color: #902923;
-    border: 0.1px solid white;
-    cursor: pointer;
-    background: rgb(185,186,163);
-    background: linear-gradient(185deg, rgba(185,186,163,1) 0%, rgba(126,126,126,1) 100%); 
-}
-
-.btn-service span{
-    font-size: 17px;
-}
-
-.btn-service button:hover{
-    color: white;
-    transition: 0.5s ease-in;
-    background: rgb(10,16,13);
-    background: linear-gradient(185deg, rgba(10,16,13,1) 0%, rgba(69,76,73,1) 100%);
-    -webkit-box-shadow: -2px 1px 31px -12px rgba(255,255,255,1);
-    -moz-box-shadow: -2px 1px 31px -12px rgba(255,255,255,1);
-    box-shadow: -2px 1px 31px -12px rgba(255,255,255,1);
-}
 
 #web-img img{
     width: 100%;
@@ -182,9 +155,6 @@
     .service-spot button{
         width: 10rem;
     }
-    .btn-service button {
-        margin-right: 1rem;
-    }
 }
 
 
@@ -202,9 +172,6 @@
     .service-spot button{
         width: 8rem;
     }
-    .btn-service span {
-        font-size: 13px;
-    }
     .btn-service-contact button {
         font-size: 13px;
     }
@@ -219,9 +186,6 @@
     }
     .service-spot button {
         width: 10rem;
-    }
-    .btn-service span {
-        font-size: 16px;
     }
     .btn-service-contact button {
         font-size: 16px;
@@ -334,9 +298,6 @@
 @media(max-width: 360px){
     .service-spot button {
         width: 8.5rem;
-    }
-    .btn-service span {
-        font-size: 13.5px;
     }
     .btn-service-contact button {
         font-size: 13.5px;

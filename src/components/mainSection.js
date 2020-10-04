@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/main.css';
 import cham from '../res/cham.png';
+import alertify from 'alertifyjs';
 import Typed from 'typed.js';
 
 class MainSection extends Component {
@@ -45,7 +46,7 @@ class MainSection extends Component {
                             champrogrammers@gmail.com
                         </a>
 
-                        <a href="https://web.whatsapp.com/" rel="noopener noreferrer">
+                        <a onClick={ () => {alertify.alert('Próximamente', 'Aún no contamos con servicio de whatsapp');}}>
                             <i className="fa fa-whatsapp" aria-hidden="true"></i>
                             +52 3333333333
                         </a>

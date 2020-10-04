@@ -23,12 +23,6 @@ body {
     background-size: cover;
 }
 
-.TODO{
-    z-index: 100;
-    position: absolute;
-    width: 100%;
-}
-
 #particles{
     position: fixed;
     height: 100%;

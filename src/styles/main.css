@@ -48,6 +48,7 @@
     font-weight: lighter;
     font-size: 0.9rem;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .bar-contact a:hover {
