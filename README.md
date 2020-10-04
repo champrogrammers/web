@@ -2,9 +2,9 @@
 
 Página de CHAM programmers.
 
-## Tecnologias
+## Framework
 
-React, Javascript, CSS3, HTML5.
+ReactJS
 
 ## Librerias
 
