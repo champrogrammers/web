@@ -16,6 +16,7 @@ class Form extends Component {
 
     componentDidMount() {
         selectFunction();
+        alertify.alert('Aviso de privacidad', 'Los datos que usted introduce en este formulario están protegidos por nosotros, solo los necesitamos para establecer contacto con usted. Después de una semana hábil sus datos quedan eliminados de nuestra base de datos.');
         window.scroll(0, 0);
     }
 
@@ -51,7 +52,7 @@ class Form extends Component {
             })
             .catch(error => {
                 alertify.set('notifier', 'position', 'top-center');
-                alertify.alert('Error', 'No se ha mandado tu mensaje', function () { alertify.error(errorMsg) });
+                alertify.alert('Fallo la operación', 'No se pudo establecer comunicación con el servidor.', function () { alertify.error(errorMsg) });
             })
 
     }
@@ -61,7 +62,7 @@ class Form extends Component {
         return (
             <React.Fragment>
                 
-                <div className="form-bg">
+                <div id="bg-contact">
                     <form className="contact animate__animated animate__bounceInDown" onSubmit={this.recibeForm}>
 
                         <h2>Formato de cotización</h2>

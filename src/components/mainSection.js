@@ -45,7 +45,7 @@ class MainSection extends Component {
                             champrogrammers@gmail.com
                         </a>
 
-                        <a href="mailto:champrogrammers@gmail.com" >
+                        <a href="#" rel="noopener noreferrer" >
                             <i className="fa fa-whatsapp" aria-hidden="true"></i>
                             +52 3333333333
                         </a>
@@ -56,7 +56,7 @@ class MainSection extends Component {
                         <img className="animate__animated animate__fadeInDown" src={cham} alt="Logo Cham programmers" />
                         <h1>CHAM Programmers</h1>
                         <p className="animate__animated animate__fadeInDown">
-                            Te ayudamos a actualizar tu marca o negocio haciéndolo más eficaz y tecnologico, adecuandonos a tu giro.
+                            Te ayudamos a actualizar tu marca o negocio haciéndolo más eficaz y tecnológico, adecuándonos a tu giro.
                         </p>
                         <div className="type-wrap">
                             <span ref={(el) => { this.el = el; }}></span>
@@ -70,10 +70,11 @@ class MainSection extends Component {
                             <h2>¿En que te podemos ayudar?</h2>
                             <hr />
                             <i className="fa fa-shopping-basket" aria-hidden="true"></i>
-                            <p>Bueno, en CHAM tenemos la visión de que todos los pequeños negocios puedan tener su propio espacio
-                            en internet; ese es el motivo por el que estamos aquí, queremos que tu negocio pueda triunfar de manera
-                            digital, tal como la epoca actual lo demanda.
-                        </p>
+                            <p>
+                                Bueno, en CHAM tenemos la visión de que todos los pequeños negocios puedan tener su propio espacio en 
+                                internet; ese es el motivo por el que estamos aquí, queremos que tu negocio pueda triunfar de manera 
+                                digital, tal como la época actual lo demanda.
+                            </p>
                         </div>
                         <div id="f-view">
                             <h2>¿Como te podemos ayudar?</h2>
@@ -81,13 +82,13 @@ class MainSection extends Component {
                             <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
                             <p>
                                 Podemos ayudarte a implementar herramientas de software a tu negocio, como lo son el caso de las páginas
-                                web, u otras herramientas para asegurarnos de que tu desarrollo que solicitas siempre estén funcionando y
-                                disponibles para su uso. Contamos con personal capacitado para ayudarte con lo que necesitas.
+                                web, u otras herramientas. además de asegurarnos de que tu desarrollo que solicitas siempre este funcionando y
+                                disponible para su uso. Contamos con personal capacitado para ayudarte con lo que necesitas.
                         </p>
                         </div>
                     </div>
                     <div className="l-view">
-                        <h3>Te inivitamos a que mires nuestros servicios</h3>
+                        <h3>Te invitamos a que mires nuestros servicios</h3>
                         <hr />
                         <i className="fa fa-link" aria-hidden="true"></i>
                         <p>Haz click en el botón para ser redirigido/a a nuestra página con nuestros servicios.</p>

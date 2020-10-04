@@ -9,6 +9,20 @@ body {
     margin: auto;
 }
 
+#bg-contact {
+    background-image: url("../res/images-services/iphone-410324_1920.jpg");
+    -webkit-box-shadow: inset 1px 18px 300px 200px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 1px 18px 300px 200px rgba(0,0,0,0.5);
+    box-shadow: inset 1px 18px 300px 200px rgba(0,0,0,0.5);
+    filter: contrast(1.1);
+    margin-top: -3rem;
+    padding: 2rem;
+    margin-bottom: -3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .TODO{
     z-index: 100;
     position: absolute;
@@ -154,6 +168,21 @@ h2{
     font-size: 1.5rem;
 }
 
+.txt-contact button {
+    border: 1px solid whitesmoke;
+    padding: 1rem;
+    background-color: #0A100D;
+    color: whitesmoke;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.txt-contact button:hover {
+    transition: ease-in 0.2s;
+    background-color: #c83d3e;
+}
+
 .content-services span{
     font-size: 2rem;
     color: #902923;
@@ -187,28 +216,6 @@ h2{
     width: 9rem;
     margin: auto;
     display: block;
-}
-
-.Error404 h2{
-    color: #D6D5C9;
-    font-size: 14rem;
-    text-align: center;
-    width: 62%;
-    margin: auto;
-}
-
-.Error404 h3{
-    color: #D6D5C9;
-    text-align: revert;
-    margin: auto;
-    margin-left: 14rem;
-    font-size: 2rem;
-}
-
-.Error404 h3 p{
-    display: flex;
-    line-height: 0.6rem;
-    font-family: 'Courier New', Courier, monospace
 }
 
 .txtBlue{
@@ -354,25 +361,8 @@ h2{
     }
 }
 
-@media(max-width: 1130px){
-    .Error404 h2 {
-        font-size: 12rem;
-    }
-    .Error404 h3 p{
-        font-size: 1.5rem;
-    }
-}
 
 @media(max-width: 962px){
-    .Error404 h2 {
-        font-size: 10rem;
-    }
-    .Error404 h3 p{
-        font-size: 1.3rem;
-    }
-    .Error404 h3 {
-        margin-left: 9rem;
-    }
     #container-works{
         flex-direction: column;
     }
@@ -394,12 +384,6 @@ h2{
     }
     .content-services span {
         font-size: 2rem;
-    }
-    .Error404 h2 {
-        font-size: 8rem;
-    }
-    .Error404 h3 p{
-        font-size: 1rem;
     }
     .txt-contact h2{
         font-size: 2.5rem;
@@ -428,15 +412,6 @@ h2{
     }
 }
 
-@media(max-width: 645px){
-    .Error404 h2 {
-        font-size: 6rem;
-    }
-    .Error404 h3 {
-        margin-left: 7rem;
-    }
-}
-
 @media(max-width: 600px){
     .txt-contact h2{
         font-size: 1.5rem;
@@ -448,15 +423,6 @@ h2{
 }
 
 @media(max-width: 527px){  
-    .Error404 h3 p {
-    font-size: 0.8rem;
-    }
-    .Error404 h2 {
-        font-size: 5.4rem;
-    }
-    .Error404 h3 {
-        margin-left: 5rem;
-    }
     .itm-portafolio{
         padding: 1rem;
     }
@@ -477,9 +443,6 @@ h2{
     }
     .footer {
         margin-top: 7rem;
-    }
-    .Error404 h2 {
-        margin-top: 6rem;
     }
     .default-menu{
         display: none;
@@ -507,12 +470,6 @@ h2{
     }
     .descripion{
         line-height: 2;
-    }
-    .Error404 h3 {
-        margin-left: 3rem;
-    }
-    .Error404 h2 {
-        font-size: 4.2rem;
     }
     .sqr-services p {
         margin-top: 1;
@@ -549,12 +506,6 @@ h2{
 @media(max-width: 321px){
     .logo {
         width: 11rem;
-    }
-    .Error404 h3 p {
-        font-size: 0.7rem;
-    }
-    .Error404 h2 {
-        font-size: 3.2rem;
     }
     .type-wrap span{
         font-size: 1.2rem;
@@ -612,16 +563,6 @@ h2{
   }
 
   /*Formulario*/
-
-.form-bg{
-    background-image: url("../res/images-services/pexels-burst-374857.jpg");
-    margin-top: -3rem;
-    padding: 2rem;
-    margin-bottom: -3rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 .contact h2{
     color: #d6d6cb;
@@ -722,7 +663,7 @@ h2{
 }
 
 @media(max-width: 562px){
-    .form-bg {
+    #bg-contact {
         margin-bottom: -7rem;
         padding-right: 0;
         padding-left: 0;
@@ -737,7 +678,7 @@ h2{
 
 @media(max-width: 440px){
     .contact{
-        margin-top: 3rem;
+        margin-top: 1rem;
         padding: 5%;
     }
     #names {

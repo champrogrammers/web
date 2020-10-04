@@ -37,7 +37,7 @@ class portfolioElment extends Component {
                         </div>
                         <div className="work-buttons">
                             <button onClick={() => { window.location.href = work.link }}>
-                                Ver Detallles
+                                Ir a desarrollo
                             </button>
                         </div>
                     </div>

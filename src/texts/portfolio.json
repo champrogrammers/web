@@ -2,7 +2,7 @@
     "works": [
         {
             "title": "Interfaz para restaurante",
-            "info": "Aplicación de ecritorio con el objetivo de hacer consultas a una base de datos alojada en un servidor de SQLserver, la aplicación facilita la administración de facturas a un restaurante de mariscos de Guadalajara.",
+            "info": "Aplicación de escritorio con el objetivo de hacer consultas a una base de datos alojada en un servidor de SQLserver, la aplicación facilita la administración de facturas a un restaurante de mariscos de Guadalajara.",
             "image": "https://source.unsplash.com/random",
             "tags": ["#Java", "#FXML", "#SQL"],
             "link": "https://www.google.com"

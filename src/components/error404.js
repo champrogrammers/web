@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import '../styles/404.css';
 
 class Error404 extends Component {
     render(){
         return(
             <div className="Error404">
-               <h2>{`4 </> 4`}</h2>
-        <h3><p>{`/* No deberias haber llegado aqui */`}</p></h3>
-               <h3><p><div className="txtBlue">{`Error404`}</div><div className="txtwhite">{`( ) {`}</div></p></h3> 
-                <h3><p>
-                    <div className="txtRed">{`message`}</div>
-                    <div className="txtwhite">{`: "`}</div>
-                    <div className="txtGreen">{`Página no encontrada`}</div>
-                    <div className="txtwhite">{`";`}</div>
-                    </p></h3>
-                <h3><p><div className="txtwhite">{`}`}</div></p></h3>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <span className="animate__animated animate__flash">404</span>
+                <div className="animate__animated animate__backInUp">
+                   <p>Página no disponible</p>
+                    <p>La página que solicitaste no existe en el servidor.</p> 
+                </div>
+                <NavLink activeClassName="active" to="/Home">Volver al inicio</NavLink>
             </div>
         
         )
