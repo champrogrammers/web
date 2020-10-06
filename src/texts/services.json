@@ -18,23 +18,12 @@
                 "three": "Tu página web estará alojada en un servidor totalmente conectado a internet y a tu dominio de preferencia. Listo para que tus clientes accedan desde cualquier parte a tu web."
             }
         ],
-        "movile": [
-            {
-                "one": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
-            },
-            {
-                "two": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
-            },
-            {
-                "three": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
-            }
-        ],
         "desktop": [
             {
                 "one": "Desarrollos codificados y compilados en diferentes lenguajes de programación, perfecto para que se adapten a tus necesidades sin importar el sistema operativo que manejes."
             },
             {
-                "two": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum vel nulla sed hendrerit. Sed mi orci, convallis vel dui et, lacinia bibendum odio. Aenean lectus lorem, mollis at aliquet."
+                "two": "Realizamos pruebas a los programas, esto incluye a los de escritorio. Toda aplicación necesita ser testeada para así asegurar su funcionamiento y calidad final."
             },
             {
                 "three": "Tú dices que hacer y nosotros lo hacemos, los desarrollos se adaptan a las necesidades que usted requiera. Desde el aspecto mas simple hasta le mas complejo"
@@ -56,7 +45,7 @@
                 "two": "Todo negocio debe de tener seriedad para así poder atraer a los clientes, lo sabemos y por ello te ofrecemos contenidos serios para que la gente tenga confianza de tu sitio web."
             },
             {
-                "three": "La gente lo primero que ve es el físico ¿No?, por ello nuestros diseños siempre van a ser lo mas sencillos y atractivos posibles para que la experiencia de usuario en tu sitio web sea óptima y a la talla de tu negocio."
+                "three": "Está comprobado que las páginas con buen diseño llaman más la atención, por ello nuestros diseños siempre van a ser lo mas sencillos y atractivos posibles para que la experiencia de usuario en tu sitio web sea óptima y a la talla de tu negocio."
             }
         ]
     }

@@ -46,7 +46,7 @@ class MainSection extends Component {
                             champrogrammers@gmail.com
                         </a>
 
-                        <a onClick={ () => {alertify.alert('Próximamente', 'Aún no contamos con servicio de whatsapp');}}>
+                        <a href="#" onClick={ () => {alertify.alert('Próximamente', 'Aún no contamos con servicio de whatsapp');}}>
                             <i className="fa fa-whatsapp" aria-hidden="true"></i>
                             +52 3333333333
                         </a>

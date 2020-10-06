@@ -6,7 +6,6 @@ import texts from '../texts/services.json';
 
 //Imagenes
 import webImage from '../res/images-services/laptop-2587224_1280.jpg';
-import androidImage from '../res/images-services/smartphone-1735044_1280.jpg';
 import desktopImage from '../res/images-services/pexels-christina-morillo-1181675.jpg';
 import designImage from '../res/images-services/pexels-picjumbocom-196644.jpg';
 import dataImage from '../res/images-services/pexels-lukas-669619.jpg';
@@ -15,9 +14,6 @@ import dataImage from '../res/images-services/pexels-lukas-669619.jpg';
 import designIco from '../res/icons-services/sitio-web.svg';
 import seoIco from '../res/icons-services/grafico-de-barras.svg';
 import serverIco from '../res/icons-services/servidor.svg';
-import movileIco from '../res/icons-services/telefono-inteligente.svg';
-import jarraIco from '../res/icons-services/jarra-lapiz.svg';
-import compasIco from '../res/icons-services/brujula.svg';
 import filtrarIco from '../res/icons-services/filtrar.svg';
 import relationIcon from '../res/icons-services/vector.svg';
 import responsiveIco from '../res/icons-services/dispositivos.svg';
@@ -116,60 +112,6 @@ class Services extends Component {
                     </div>
                 </div>
 
-                <div className="box movile">
-                    <div id="web-img">
-                        <img src={androidImage} alt="Android application"></img>
-                    </div>
-                    <div className="service-spot">
-                        <div id="center-service">
-                            <h2 className="Important-title">
-                                Desarrollo de apliciones Android
-                        </h2>
-
-                            <div className="priority-tittle">
-                                {texts.Services.movileDevelopments}
-                            </div>
-
-                            <div className="btn-service-contact">
-                                <button onClick={this.viewForm}>
-                                    <span>
-                                        Cotizar servicio
-                                </span>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div className="banner">
-                    <h3>Servicios de apliciones android</h3>
-                    <div className="cards">
-                        <div id="card-element">
-                            <img src={jarraIco} alt="Design include"></img>
-                            <h3>Ejemplo</h3>
-                            <span>
-                                {texts.Banners.movile[0].one}
-                            </span>
-                        </div>
-                        <div id="card-element">
-                            <img src={movileIco} alt="Design include"></img>
-                            <h3>Ejemplo</h3>
-                            <span>
-                                {texts.Banners.movile[1].two}
-                            </span>
-                        </div>
-                        <div id="card-element">
-                            <img src={compasIco} alt="Design include"></img>
-                            <h3>Ejemplo</h3>
-                            <span>
-                                {texts.Banners.movile[2].three}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
                 <div className="box desktop">
                     <div className="service-spot">
                         <div id="center-service">
@@ -206,7 +148,7 @@ class Services extends Component {
                         </div>
                         <div id="card-element">
                             <img src={monitorIco} alt="Design include"></img>
-                            <h3>Ejemplo</h3>
+                            <h3>Pruebas</h3>
                             <span>
                                 {texts.Banners.desktop[1].two}
                             </span>

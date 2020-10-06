@@ -130,11 +130,12 @@
     flex-direction: column;
     text-align: justify;
     cursor: default;
+    padding: 1rem;
 }
 
 #card-element:hover{
-    transform: translateY(-8px);
-    transition: 0.5s ease;
+    transform: translateY(-3px);
+    transition: 0.7s ease;
 }
 
 #card-element span{
@@ -218,9 +219,6 @@
     .web{
         margin-top: -3rem;
         background-image: url("../res/images-services/laptop-2587224_1280.jpg");
-    }
-    .movile{
-        background-image: url("../res/images-services/smartphone-1735044_1280.jpg");
     }
     .desktop{
         background-image: url("../res/images-services/pexels-christina-morillo-1181675.jpg");
